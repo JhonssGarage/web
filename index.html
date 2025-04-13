@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js"></script>
+    <title>Jhonss Garage</title>
+</head>
+<body>
+    <header>
+        <h1>JHONSS <span style="color:#ccc">GARAGE</span></h1>
+        <nav>
+          <a href="#">Início</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </header>
+    
+      <section class="hero section">
+        <div>
+          <h2>Detalhamento que impressiona.</h2>
+          <p>Qualidade que permanece.</p>
+          <button class="btn">Agende seu horário</button>
+        </div>
+      </section>
+    
+      <section id="servicos" class="section">
+        <h2>Serviços</h2>
+        <div class="cards">
+          <div class="card">
+            <div class="card-header">
+                <img src="./imgs/seat.avif" alt="Limpeza de Estofados" class="card-img">
+            </div>
+            <h3>Limpeza de Estofados</h3>
+            <p>Higienização profunda de bancos e carpetes.</p>
+            <button class="btn">Saiba mais</button>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="./imgs/detailing.avif" alt="Polimento de Pintura" class="card-img">
+            </div>
+            <h3>Polimento de Pintura</h3>
+            <p>Restauração do brilho exterior da pintura.</p>
+            <button class="btn">Saiba mais</button>
+          </div>
+          <div class="card">
+            <div class="card-header">
+                <img src="./imgs/engine.jpg" alt="Detalhamento de Motor" class="card-img">
+            </div>            
+            <h3>Detalhamento de Motor</h3>
+            <p>Limpeza e cuidado da área interna do motor.</p>
+            <button class="btn">Saiba mais</button>
+          </div>
+        </div>
+      </section>
+    
+      <section id="contato" class="section">
+        <h2>Contato</h2>
+        <div class="contact">
+          <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea rows="5" placeholder="Mensagem" required></textarea>
+            <button class="btn" type="submit">Enviar</button>
+          </form>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d793.2612487664909!2d-48.31310311256609!3d-18.957594341083798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1744564583685!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </section>
+    
+      <footer>
+        <p>&copy; <span id="currentYear"></span> Jhonss Garage. Todos os direitos reservados.</p>
+      </footer>
+    
+      <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Mensagem enviada com sucesso!');
+        });
+      </script>
+    </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
