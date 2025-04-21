@@ -11,10 +11,11 @@
 </head>
 <body>
     <header>
-        <h1>JHONSS <span style="color:#ccc">GARAGE</span></h1>
+        <img src="./imgs/logo.png" alt="Logo Jhonss Garage" class="logo">
         <nav>
-          <a href="#">Início</a>
+          <a href="./index.html">Início</a>
           <a href="#servicos">Serviços</a>
+          <a href="./galeria.html">Galeria</a>
           <a href="#contato">Contato</a>
         </nav>
       </header>
@@ -23,53 +24,156 @@
         <div>
           <h2>Detalhamento que impressiona.</h2>
           <p>Qualidade que permanece.</p>
-          <button class="btn">Agende seu horário</button>
+          <button class="btn">Conheça nosso catálogo</button>
         </div>
       </section>
     
       <section id="servicos" class="section">
         <h2>Serviços</h2>
-        <div class="cards">
-          <div class="card">
-            <div class="card-header">
-                <img src="./imgs/seat.avif" alt="Limpeza de Estofados" class="card-img">
+
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="7" aria-label="Slide 8"></button>
             </div>
-            <h3>Limpeza de Estofados</h3>
-            <p>Higienização profunda de bancos e carpetes.</p>
-            <button class="btn">Saiba mais</button>
-          </div>
-          <div class="card">
-            <div class="card-header">
-                <img src="./imgs/detailing.avif" alt="Polimento de Pintura" class="card-img">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <img src="./imgs/washing.png" alt="Lavagem" class="card-img">
+                            </div>
+                            <h3>Lavagem</h3>
+                            <p>Lavagem tradicional, de motor, detalhada, com produtos e técnicas específicas para cada tipo de veículo e pintura.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Lavagem.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <img src="./imgs/internal_cleaning.png" alt="Limpeza de Estofados" class="card-img">
+                            </div>
+                            <h3>Higienização</h3>
+                            <p>Limpeza profunda de estofados, carpetes e tapetes, remoção de manchas, aplicação de produtos impermeabilizantes e higienização de ar condicionado.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Higienização.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-header">
+                                <img src="./imgs/vitrificacao.png" alt="Vitrificação" class="card-img">
+                            </div>
+                            <h3>Vitrificação</h3>
+                            <p>Proteção de pintura para aumentar a resistência do verniz contra arranhões e sujidades.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Vitrificação.')">Saiba mais</button>
+                        </div>                                                
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">                        
+                            <div class="card-header">
+                                <img src="./imgs/image.png" alt="Polimento" class="card-img">
+                            </div>            
+                            <h3>Polimento</h3>
+                            <p>Polimento técnico para remoção de riscos e manchas, revitalização da pintura, aplicação de cera e selantes para proteção da pintura.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Polimento.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">                        
+                            <!-- <div class="card-header">
+                                <img src="./imgs/engine.jpg" alt="Detalhamento de Motor" class="card-img">
+                            </div>             -->
+                            <h3>Tratamento das Rodas e Caixas de Rodas</h3>
+                            <p>Pintura e lubrificação para aumento da resistência do verniz.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Tratamento de caixa de Rodas.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">                        
+                            <!-- <div class="card-header">
+                                <img src="./imgs/engine.jpg" alt="Detalhamento de Motor" class="card-img">
+                            </div>             -->
+                            <h3>Cristalização de vidros</h3>
+                            <p>Limpeza para remoção das manchas, aplicação de produtor cristalizador para hidrorepelência.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Cristalização de vidros.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">                        
+                            <!-- <div class="card-header">
+                                <img src="./imgs/engine.jpg" alt="Detalhamento de Motor" class="card-img">
+                            </div>             -->
+                            <h3>Tratamento de plásticos</h3>
+                            <p>Renovação de partes plásticas ressecadas com aplicação de produto vitrificador.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Tratamento de plásticos.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <div class="card">
+                        <div class="card-content">                        
+                            <!-- <div class="card-header">
+                                <img src="./imgs/engine.jpg" alt="Detalhamento de Motor" class="card-img">
+                            </div>             -->
+                            <h3>Recuperação de faróis</h3>
+                            <p>Polimento e aplicação de produto vitrificador.</p>
+                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Recuperação de faróis.')">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>                
             </div>
-            <h3>Polimento de Pintura</h3>
-            <p>Restauração do brilho exterior da pintura.</p>
-            <button class="btn">Saiba mais</button>
-          </div>
-          <div class="card">
-            <div class="card-header">
-                <img src="./imgs/engine.jpg" alt="Detalhamento de Motor" class="card-img">
-            </div>            
-            <h3>Detalhamento de Motor</h3>
-            <p>Limpeza e cuidado da área interna do motor.</p>
-            <button class="btn">Saiba mais</button>
-          </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+            </button>
         </div>
       </section>
     
       <section id="contato" class="section">
         <h2>Contato</h2>
         <div class="contact">
-          <form>
-            <input type="text" placeholder="Nome" required>
-            <input type="email" placeholder="E-mail" required>
-            <textarea rows="5" placeholder="Mensagem" required></textarea>
-            <button class="btn" type="submit">Enviar</button>
-          </form>
-          <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d793.2612487664909!2d-48.31310311256609!3d-18.957594341083798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1744564583685!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
+            <p>
+                Nossos canais:
+            </p>
+            <p>
+                <i class="bi bi-envelope"></i> <a href="mailto:contato@email.com" style="color: #4da6ff; font-weight: bold;">contato@email.com</a> 
+            </p>
+            <p>
+                <i class="bi bi-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5534997959523" target="_blank" style="color: #4da6ff; font-weight: bold;">34 9 9795-9523</a>
+            </p>
+            <p>
+                <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/joao_henri._/" target="_blank" style="color: #4da6ff; font-weight: bold;">@joao_henri._</a>
+            </p>
+        </div>        
+        <div class="map">
+            <p><h3>Visite o nosso espaço</h3></p>            
+            <p>Alameda Jardim Holanda, 231 - Jardim Holanda, Uberlândia - MG</p>
+            <div class="map-frame">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d793.2620008954079!2d-48.312042770066256!3d-18.95743618942976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444a59e337045%3A0x86d70eb4b3033cd9!2sAlameda%20Jardim%20Holanda%2C%20231%20-%20Jardim%20Holanda%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038412-330!5e0!3m2!1spt-BR!2sbr!4v1745241112973!5m2!1spt-BR!2sbr" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>      
       </section>
     
       <footer>

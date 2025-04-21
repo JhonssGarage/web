@@ -1,3 +1,9 @@
+header .logo {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,12 +11,14 @@ html {
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: #33353b;
+    /* background-color: #33353b; */
+    background-color: #000;
     color: #ddd;
 }
 
 header {
-    background-color: #2b2e33;
+    /* background-color: #2b2e33; */
+    background-color: #000;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -21,7 +29,7 @@ header {
 }
 
 header h1 {
-    color: #4da6ff;
+    color: #15c2f2;
     font-size: 28px;
 }
 
@@ -30,6 +38,11 @@ nav a {
     margin-left: 20px;
     text-decoration: none;
     font-weight: 500;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: #15c2f2;
 }
 
 .hero {
@@ -53,8 +66,8 @@ nav a {
 .btn {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4da6ff;
-    border: 2px solid #4da6ff;
+    background-color: #15c2f2;
+    border: 2px solid #15c2f2;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -62,7 +75,7 @@ nav a {
 }
 
 .btn:hover {
-    border: 2px solid #4da6ff;
+    border: 2px solid #15c2f2;
     color: #fff;
 }
 
@@ -70,25 +83,39 @@ nav a {
     padding: 40px;
     width: 100%;
     height: 100vh;
-    padding-top: 80px;
-}
-
-.cards {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    padding-top: 160px;
 }
 
 .card {
-    background-color: #2b2e33;
-    flex: 1;
-    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 250px);
+    width: 100%;
+    /* background-color: #2b2e33; */
+    background-color: #000;
+    padding-bottom: 30px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     padding: 20px;
-    border-radius: 10px;
+}
+
+.card-header {
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card h3 {
-    color: #4da6ff;
+    color: #15c2f2;
 }
 
 .card p {
@@ -98,28 +125,21 @@ nav a {
 
 .contact {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.contact form {
-    flex: 1;
-    display: flex;
     flex-direction: column;
-}
-
-.contact input,
-.contact textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 6px;
-    background-color: #3a3f47;
-    color: white;
 }
 
 .map {
     flex: 1;
+    width: 100%;
+}
+
+.map-frame {
+    width: 100%;
+    height: auto;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer {
@@ -127,4 +147,25 @@ footer {
     padding: 20px;
     background-color: #1a1a1a;
     color: #777;
+}
+
+.galery-item img {
+    max-width: 100%; /* Garante que a largura da imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+    padding: 20px;
+}
+
+.galery-item {
+    max-width: 300px; /* Define um tamanho máximo para o contêiner */
+    margin: 0 auto; /* Centraliza o contêiner */
+    overflow: hidden; /* Garante que nada ultrapasse o contêiner */
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
