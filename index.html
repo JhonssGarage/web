@@ -10,25 +10,27 @@
     <title>Jhonss Garage</title>
 </head>
 <body>
-    <header>
-        <img src="./imgs/logo.png" alt="Logo Jhonss Garage" class="logo">
+    <header class="menu">
+        <a href="./index.html">
+            <img src="./imgs/logo.png" alt="Logo Jhonss Garage" class="logo">
+        </a>
         <nav>
           <a href="./index.html">Início</a>
           <a href="#servicos">Serviços</a>
-          <!-- <a href="./galeria.html">Galeria</a> -->
+          <!-- <a href="./gallery.html">Galeria</a> -->
           <a href="#contato">Contato</a>
         </nav>
-      </header>
+    </header>
     
-      <section class="hero section">
+    <section class="hero section">
         <div>
-          <h2>Detalhamento que impressiona.</h2>
-          <p>Qualidade que permanece.</p>
-          <button class="btn">Conheça nosso catálogo</button>
+            <h2>Detalhamento que impressiona.</h2>
+            <p>Qualidade que permanece.</p>
+            <a href="./catalog.html" class="btn">Conheça nosso catálogo</a>
         </div>
-      </section>
-    
-      <section id="servicos" class="section">
+    </section>
+
+    <section id="servicos" class="section">
         <h2>Serviços</h2>
 
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -51,7 +53,7 @@
                             </div>
                             <h3>Lavagem</h3>
                             <p>Lavagem tradicional, de motor, detalhada, com produtos e técnicas específicas para cada tipo de veículo e pintura.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Lavagem.')">Saiba mais</button>
+                            <a href="./catalog.html#lavagem" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +65,7 @@
                             </div>
                             <h3>Higienização</h3>
                             <p>Limpeza profunda de estofados, carpetes e tapetes, remoção de manchas, aplicação de produtos impermeabilizantes e higienização de ar condicionado.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Higienização.')">Saiba mais</button>
+                            <a href="./catalog.html#higienizacao" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -75,7 +77,7 @@
                             </div>
                             <h3>Vitrificação</h3>
                             <p>Proteção de pintura para aumentar a resistência do verniz contra arranhões e sujidades.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Vitrificação.')">Saiba mais</button>
+                            <a href="./catalog.html#vitrificacao" class="btn">Saiba mais</a>
                         </div>                                                
                     </div>
                 </div>
@@ -87,7 +89,7 @@
                             </div>            
                             <h3>Polimento</h3>
                             <p>Polimento técnico para remoção de riscos e manchas, revitalização da pintura, aplicação de cera e selantes para proteção da pintura.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Polimento.')">Saiba mais</button>
+                            <a href="./catalog.html#polimento" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -99,7 +101,7 @@
                             </div>             -->
                             <h3>Tratamento das Rodas e Caixas de Rodas</h3>
                             <p>Pintura e lubrificação para aumento da resistência do verniz.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Tratamento de caixa de Rodas.')">Saiba mais</button>
+                            <a href="./catalog.html#rodas_e_caixa_de_rodas" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +113,7 @@
                             </div>             -->
                             <h3>Cristalização de vidros</h3>
                             <p>Limpeza para remoção das manchas, aplicação de produtor cristalizador para hidrorepelência.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Cristalização de vidros.')">Saiba mais</button>
+                            <a href="./catalog.html#vidros" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -123,7 +125,7 @@
                             </div>             -->
                             <h3>Tratamento de plásticos</h3>
                             <p>Renovação de partes plásticas ressecadas com aplicação de produto vitrificador.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Tratamento de plásticos.')">Saiba mais</button>
+                            <a href="./catalog.html#plasticos" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -135,7 +137,7 @@
                             </div>             -->
                             <h3>Recuperação de faróis</h3>
                             <p>Polimento e aplicação de produto vitrificador.</p>
-                            <button class="btn" onclick="info('Olá! Gostaria de maiores informações sobre o serviço de Recuperação de faróis.')">Saiba mais</button>
+                            <a href="./catalog.html#farois" class="btn">Saiba mais</a>
                         </div>
                     </div>
                 </div>                
@@ -149,9 +151,9 @@
             <span class="visually-hidden">Próximo</span>
             </button>
         </div>
-      </section>
-    
-      <section id="contato" class="section">
+    </section>
+
+    <section id="contato" class="section">
         <h2>Contato</h2>
         <div class="contact">
             <p>
@@ -162,7 +164,7 @@
                     <i class="bi bi-envelope"></i> <a href="mailto:contato@email.com" style="color: #4da6ff; font-weight: bold;">contato@email.com</a> 
                 </p>
                 <p>
-                    <i class="bi bi-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5534997959523" target="_blank" style="color: #4da6ff; font-weight: bold;">34 9 9795-9523</a>
+                    <i class="bi bi-whatsapp"></i> <a href="https://api.whatsapp.com/send?phone=5534984300186" target="_blank" style="color: #4da6ff; font-weight: bold;">34 9 9795-9523</a>
                 </p>
                 <p>
                     <i class="bi bi-instagram"></i> <a href="https://www.instagram.com/joao_henri._/" target="_blank" style="color: #4da6ff; font-weight: bold;">@joao_henri._</a>
@@ -176,19 +178,18 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1121.8403854494097!2d-48.311368223649204!3d-18.95765843294964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a444a59e0c2217%3A0x3d5d290c9e5e296e!2sAlameda%20Jardim%20Holanda%2C%20231%20-%20Jardim%20Holanda%2C%20Uberl%C3%A2ndia%20-%20MG%2C%2038412-330!5e0!3m2!1spt-BR!2sbr!4v1745263357802!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>      
-      </section>
-    
-      <footer>
+    </section>
+
+    <footer>
         <p>&copy; <span id="currentYear"></span> Jhonss Garage. Todos os direitos reservados.</p>
-      </footer>
-    
-      <script>
+    </footer>
+
+    <script>
         document.querySelector('form').addEventListener('submit', function(e) {
-          e.preventDefault();
-          alert('Mensagem enviada com sucesso!');
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso!');
         });
-      </script>
-    </body>
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>

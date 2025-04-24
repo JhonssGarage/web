@@ -6,14 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const whatsappSpan = document.getElementById('whatsapp');
     whatsappSpan.addEventListener('click', () => {
-        window.open('https://wa.me/5534997959523', '_blank'); // Substitua pelo número correto
+        window.open('https://wa.me/5534984300186', '_blank'); // Substitua pelo número correto
     });
 });
 
 function agendarHorario() {
-    window.open('https://wa.me/5534997959523?text=Ol%C3%A1%2C+gostaria+de+agendar+um+hor%C3%A1rio.', '_blank');
+    info('Olá, gostaria de agendar um horário.');
 }
 
 function info(text) {
-    window.open(`https://wa.me/5534997959523?text=${text}`, '_blank');
+    window.open(`https://wa.me/5534984300186?text=${text}`, '_blank');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const subMenu = document.querySelector('.sub-menu nav');
+    subMenu.scrollLeft = 0; // Garante que o scroll comece no início
+});
