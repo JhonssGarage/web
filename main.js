@@ -6,15 +6,15 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const whatsappSpan = document.getElementById('whatsapp');
     whatsappSpan.addEventListener('click', () => {
-        window.open('https://wa.me/5534984300186', '_blank'); // Substitua pelo número correto
+        window.open('https://wa.me/5534984300186', '_blank');
     });
 });
 
 function agendarHorario() {
-    info('Olá, gostaria de agendar um horário.');
+    sendMessage('Olá, gostaria de agendar um horário.');
 }
 
-function info(text) {
+function sendMessage(text) {
     window.open(`https://wa.me/5534984300186?text=${text}`, '_blank');
 }
 

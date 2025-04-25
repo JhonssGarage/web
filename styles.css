@@ -188,10 +188,8 @@ footer {
 
     .section {
         padding-top: 150px;
-    }
-
-    .section + .section {
-        margin-top: 250px; /* Espaçamento entre seções */
+        min-height: 100vh;
+        height: auto;
     }
 
     .map-frame iframe {
