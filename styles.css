@@ -82,15 +82,18 @@ nav a:hover {
 }
 
 .section {
-    padding: 200px 30px 30px 30px;
+    padding: 150px 30px 30px 30px;
     width: 100%;
+}
+
+.padding-top-200 {
+    padding-top: 200px;
 }
 
 .card {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 250px);
     width: 100%;
     background-color: #000;
     padding-bottom: 30px;
