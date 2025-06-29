@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('currentYear').textContent = currentYear;
 });
 
+// Adiciona o evento de clique no WhatsApp
 document.addEventListener('DOMContentLoaded', () => {
     const whatsappSpan = document.getElementById('whatsapp');
     if(whatsappSpan) {
@@ -47,6 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Reseta o scroll do sub-menu para a esquerda quando a página é carregada
 document.addEventListener('DOMContentLoaded', () => {
     const subMenu = document.querySelector('.sub-menu nav');
     if(subMenu) {
@@ -54,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Gera o sub-menu e as sections dinamicamente
 document.addEventListener('DOMContentLoaded', () => {
     // Gera o sub-menu
     const submenu = document.getElementById('dynamic-submenu');
