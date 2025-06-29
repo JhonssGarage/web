@@ -47,7 +47,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url('./imgs/image.png') no-repeat center/cover;
+    background: url('./imgs/image.webp') no-repeat center/cover;
     height: 400px;
     display: flex;
     align-items: center;
