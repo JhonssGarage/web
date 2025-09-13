@@ -2,34 +2,36 @@ const services = [
     {   
         id: 'lavada',
         category: 'Lavada',
+        background: '',
+        description: 'A categoria de Lavadas oferece processos de limpeza técnica que vão muito além de uma simples lavagem. Cada serviço é realizado com produtos de alta qualidade e métodos seguros, garantindo remoção de sujeiras sem agredir a pintura, plásticos ou metais. Do motor ao chassi, passando por lavadas detalhadas em carros e motocicletas, o objetivo é devolver o aspecto de novo e aumentar a durabilidade do veículo.',
         services: [
             {
                 service: 'Lavada técnica',
-                description: '',
+                description: 'Limpeza completa e segura, com técnicas que preservam a pintura e realçam o brilho.',
                 value: 250.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Lavada técnica detalhada',
-                description: '',
+                description: 'Higienização minuciosa, alcançando frisos, rodas e áreas de difícil acesso.',
                 value: 450.00,
                 // background: './imgs/engine.webp'
             },
             {
                 service: 'Lavada técnica de motor',
-                description: '',
+                description: 'Cofre do motor limpo com segurança, sem riscos para os componentes.',
                 value: 250.00,
                 // background: './imgs/wheels.webp'
             },
             {
                 service: 'Lavada técnica de chassis',
-                description: '',
+                description: 'Remoção de resíduos que causam corrosão, aumentando a durabilidade do veículo.',
                 value: 280.00,
                 // background: './imgs/wheels.webp'
             },
             {
                 service: 'Lavada técnica detalhada em motocicletas',
-                description: '',
+                description: 'Limpeza criteriosa em toda a moto, protegendo metais e plásticos.',
                 value: 200.00,
                 // background: './imgs/wheels.webp'
             }               
@@ -38,22 +40,24 @@ const services = [
     {   
         id: 'higienizacao',
         category: 'Higienização Interna',
+        background: '',   
+        description: 'Mais do que estética, a higienização interna é sinônimo de saúde e bem-estar. Os serviços dessa categoria eliminam sujeiras, manchas, odores e microrganismos, mantendo o interior do veículo sempre limpo e agradável. Seja com a limpeza completa, focada nos bancos ou no sistema de ar-condicionado, o cuidado é total para garantir conforto e qualidade de vida a cada viagem.',     
         services: [
             {
                 service: 'Higienização interna completa',
-                description: '',
+                description: 'Limpeza profunda em todo o interior do veículo, eliminando sujeiras, odores e microrganismos.',
                 value: 400.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Higienização dos bancos',
-                description: '',
+                description: 'Tratamento especializado em tecidos ou couro, removendo manchas e devolvendo a aparência original.',
                 value: 250.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Higienização de ar condicionado',
-                description: '',
+                description: 'Eliminação de fungos e bactérias do sistema, garantindo ar puro e saudável dentro do carro.',
                 value: 200.00,
                 // background: './imgs/tradicional_washing.webp'
             }
@@ -62,34 +66,36 @@ const services = [
     {   
         id: 'polimento',
         category: 'Polimento',
+        background: '',
+        description: 'Os serviços de polimento trazem de volta o brilho e a profundidade da pintura, corrigindo imperfeições e revitalizando superfícies. Seja no tratamento técnico, comercial, em vidros, faróis ou motocicletas, o processo é realizado com precisão para valorizar a estética do veículo e proteger contra desgastes naturais, entregando um acabamento premium.',
         services: [
             {
                 service: 'Polimento técnico',
-                description: '',
+                description: 'Corrige micro-riscos e realça a profundidade da cor, devolvendo o brilho de fábrica.',
                 value: 1500.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Polimento comercial',
-                description: '',
+                description: 'Realce rápido do brilho da pintura, indicado para manutenção estética.',
                 value: 800.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Polimento de vidros',
-                description: '',
+                description: 'Remove manchas, marcas d’água e pequenos riscos, garantindo transparência e segurança.',
                 value: 300.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Polimento de faróis',
-                description: '',
+                description: 'Recupera a transparência dos faróis, melhora a iluminação e valoriza o veículo.',
                 value: 280.00,
                 // background: './imgs/tradicional_washing.webp'
             },            
             {
                 service: 'Polimento de motocicletas',
-                description: '',
+                description: 'Brilho intenso e uniforme em todas as partes da moto, com proteção duradoura.',
                 value: 600.00,
                 // background: './imgs/tradicional_washing.webp'
             }
@@ -98,52 +104,54 @@ const services = [
     {   
         id: 'protecoes',
         category: 'Proteções',
+        description: 'A categoria de Proteções é pensada para quem deseja preservar a beleza e a durabilidade do veículo por muito mais tempo. Com tecnologias como cristalização de vidros, vitrificação de couro e plásticos, revestimentos cerâmicos de longa duração e aplicação de PPF, cada serviço cria barreiras contra os efeitos do tempo, da poluição e do uso diário, mantendo o carro sempre protegido e valorizado.',
+        background: '',        
         services: [
             {
                 service: 'Cristalização do para-brisas',
-                description: '',
+                description: 'Cria uma camada repelente à água, melhorando a visibilidade em dias chuvosos.',
                 value: 100.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Vitrificação de bancos de couro',
-                description: '',
+                description: 'Protege contra desgaste, manchas e ressecamento, mantendo o aspecto original.',
                 value: 200.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Vitrificação de plásticos',
-                description: '',
+                description: 'Restaura e protege plásticos internos e externos contra desbotamento e ressecamento.',
                 value: 250.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Cristalização de todos os vidros',
-                description: '',
+                description: 'Tratamento que aumenta a transparência, facilita a limpeza e melhora a dirigibilidade sob chuva.',
                 value: 250.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Revestimento cerâmico para pintura (até 1 ano de proteção)',
-                description: '',
+                description: 'Brilho intenso e proteção contra agentes externos de curta duração.',
                 value: 350.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Revestimento cerâmico para pintura (até 2 anos de proteção)',
-                description: '',
+                description: 'Proteção prolongada com alta resistência e fácil manutenção da pintura.',
                 value: 600.00,
                 // background: './imgs/tradicional_washing.webp'
             },            
             {
                 service: 'Revestimento cerâmico para pintura (até 3 anos de proteção)',
-                description: '',
+                description: 'Blindagem premium contra intempéries, preservando o brilho por longo prazo.',
                 value: 950.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
-                service: 'Aplicação PPF quina e concha',
-                description: '',
+                service: 'Aplicação PPF quinas e conchas',
+                description: 'Filme de proteção em áreas estratégicas contra riscos, impactos e desgaste do uso diário.',
                 value: 500.00,
                 // background: './imgs/tradicional_washing.webp'
             }            
@@ -152,52 +160,54 @@ const services = [
     {   
         id: 'outros',
         category: 'Outros Serviços',
+        background: '',
+        description: 'Nesta categoria estão soluções complementares que fazem toda a diferença no visual e conservação do veículo. Desde insulfilm, martelinho de ouro e restauração de bancos, até pinturas personalizadas e descontaminação de vidros, cada serviço é realizado com atenção aos detalhes, oferecendo estilo, praticidade e valorização ao seu automóvel.',
         services: [
             {
                 service: 'Aplicação de insulfilm',
-                description: '',
+                description: 'Conforto térmico, proteção UV e mais privacidade para o veículo.',
                 value: 400.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Martelinho de ouro',
-                description: '',
+                description: 'Remoção de amassados leves sem necessidade de pintura.',
                 value: 200.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Revestimento de volante',
-                description: '',
+                description: 'Renovação do volante com acabamento premium e antiderrapante.',
                 value: 300.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Pinturas em geral e personalização',
-                description: '',
+                description: 'Estilo exclusivo para o veículo com cores e acabamentos personalizados.',
                 value: 650.00, // A partir de 650 a peça
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Pintura de rodas',
-                description: '',
+                description: 'Recupera ou transforma o visual das rodas com durabilidade e sofisticação',
                 value: 600.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Pintura de pinças de freio',
-                description: '',
+                description: 'Destaque esportivo e proteção contra oxidação.',
                 value: 600.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Restauração e pintura de bancos de couro',
-                description: '',
+                description: 'Tratamento que renova couro desgastado, devolvendo aparência de novo.',
                 value: 1000.00,
                 // background: './imgs/tradicional_washing.webp'
             },
             {
                 service: 'Descontaminação de vidros',
-                description: '',
+                description: 'Elimina resíduos impregnados, devolvendo transparência e facilitando a limpeza.',
                 value: 200.00,
                 // background: './imgs/tradicional_washing.webp'
             }
