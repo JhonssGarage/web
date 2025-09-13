@@ -1,25 +1,205 @@
 const services = [
     {   
-        id: 'lavagem',
-        category: 'Lavagem',
+        id: 'lavada',
+        category: 'Lavada',
         services: [
             {
-                service: 'Lavagem Tradicional',
-                description: 'Lavagem simples com produtos de qualidade, incluindo limpeza de rodas e pneus.',
-                value: 80.00,
-                background: './imgs/tradicional_washing.webp'
-            },
-            {
-                service: 'Lavagem de Motor',
-                description: 'Lavagem do motor com produtos específicos para limpeza e proteção.',
-                value: 150.00,
-                background: './imgs/engine.webp'
-            },
-            {
-                service: 'Lavagem Detalhada',
-                description: 'Lavagem completa com produtos de qualidade, incluindo limpeza detalhada de rodas e caixas de rodas.',
+                service: 'Lavada técnica',
+                description: '',
                 value: 250.00,
-                background: './imgs/wheels.webp'
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Lavada técnica detalhada',
+                description: '',
+                value: 450.00,
+                // background: './imgs/engine.webp'
+            },
+            {
+                service: 'Lavada técnica de motor',
+                description: '',
+                value: 250.00,
+                // background: './imgs/wheels.webp'
+            },
+            {
+                service: 'Lavada técnica de chassis',
+                description: '',
+                value: 280.00,
+                // background: './imgs/wheels.webp'
+            },
+            {
+                service: 'Lavada técnica detalhada em motocicletas',
+                description: '',
+                value: 200.00,
+                // background: './imgs/wheels.webp'
+            }               
+        ]
+    },
+    {   
+        id: 'higienizacao',
+        category: 'Higienização Interna',
+        services: [
+            {
+                service: 'Higienização interna completa',
+                description: '',
+                value: 400.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Higienização dos bancos',
+                description: '',
+                value: 250.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Higienização de ar condicionado',
+                description: '',
+                value: 200.00,
+                // background: './imgs/tradicional_washing.webp'
+            }
+        ]
+    },
+    {   
+        id: 'polimento',
+        category: 'Polimento',
+        services: [
+            {
+                service: 'Polimento técnico',
+                description: '',
+                value: 1500.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Polimento comercial',
+                description: '',
+                value: 800.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Polimento de vidros',
+                description: '',
+                value: 300.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Polimento de faróis',
+                description: '',
+                value: 280.00,
+                // background: './imgs/tradicional_washing.webp'
+            },            
+            {
+                service: 'Polimento de motocicletas',
+                description: '',
+                value: 600.00,
+                // background: './imgs/tradicional_washing.webp'
+            }
+        ]
+    },
+    {   
+        id: 'protecoes',
+        category: 'Proteções',
+        services: [
+            {
+                service: 'Cristalização do para-brisas',
+                description: '',
+                value: 100.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Vitrificação de bancos de couro',
+                description: '',
+                value: 200.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Vitrificação de plásticos',
+                description: '',
+                value: 250.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Cristalização de todos os vidros',
+                description: '',
+                value: 250.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Revestimento cerâmico para pintura (até 1 ano de proteção)',
+                description: '',
+                value: 350.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Revestimento cerâmico para pintura (até 2 anos de proteção)',
+                description: '',
+                value: 600.00,
+                // background: './imgs/tradicional_washing.webp'
+            },            
+            {
+                service: 'Revestimento cerâmico para pintura (até 3 anos de proteção)',
+                description: '',
+                value: 950.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Aplicação PPF quina e concha',
+                description: '',
+                value: 500.00,
+                // background: './imgs/tradicional_washing.webp'
+            }            
+        ]
+    },
+    {   
+        id: 'outros',
+        category: 'Outros Serviços',
+        services: [
+            {
+                service: 'Aplicação de insulfilm',
+                description: '',
+                value: 400.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Martelinho de ouro',
+                description: '',
+                value: 200.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Revestimento de volante',
+                description: '',
+                value: 300.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Pinturas em geral e personalização',
+                description: '',
+                value: 650.00, // A partir de 650 a peça
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Pintura de rodas',
+                description: '',
+                value: 600.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Pintura de pinças de freio',
+                description: '',
+                value: 600.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Restauração e pintura de bancos de couro',
+                description: '',
+                value: 1000.00,
+                // background: './imgs/tradicional_washing.webp'
+            },
+            {
+                service: 'Descontaminação de vidros',
+                description: '',
+                value: 200.00,
+                // background: './imgs/tradicional_washing.webp'
             }
         ]
     }
@@ -83,7 +263,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                         <h4>${item.service}</h4>
                                         ${item.description}<br>
                                         <hr>
-                                        Valor: A partir de R$ ${item.value.toFixed(2).replace('.', ',')}
+                                        A partir de R$ ${item.value.toFixed(2).replace('.', ',')}
                                     </div>
                                     <button class="btn" onclick="sendMessage('Olá! Gostaria de agendar um horário para ${item.service}.')">Agendar serviço</button>
                                 </div>

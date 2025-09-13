@@ -1,0 +1,300 @@
+<html lang="pt-BR"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jhonss Garage - Serviços</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-blue': '#1382b9',
+                        'brand-blue-dark': '#0f6b94'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .carousel-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .carousel-slide {
+            min-width: 100%;
+            padding: 0 1rem;
+        }
+        @media (min-width: 768px) {
+            .carousel-slide {
+                min-width: 50%;
+            }
+        }
+        @media (min-width: 1024px) {
+            .carousel-slide {
+                min-width: 33.333%;
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.absolute{position:absolute}.left-4{left:1rem}.right-4{right:1rem}.top-1\/2{top:50%}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.mb-16{margin-bottom:4rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mt-8{margin-top:2rem}.flex{display:flex}.h-3{height:0.75rem}.h-48{height:12rem}.h-6{height:1.5rem}.h-full{height:100%}.w-3{width:0.75rem}.w-6{width:1.5rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.-translate-y-1\/2{--tw-translate-y:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.items-center{align-items:center}.justify-center{justify-content:center}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-hidden{overflow:hidden}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-gray-200{--tw-border-opacity:1;border-color:rgb(229 231 235 / var(--tw-border-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-brand-blue{--tw-bg-opacity:1;background-color:rgb(19 130 185 / var(--tw-bg-opacity, 1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/90{background-color:rgb(255 255 255 / 0.9)}.bg-gradient-to-br{background-image:linear-gradient(to bottom right, var(--tw-gradient-stops))}.from-blue-500{--tw-gradient-from:#3b82f6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 130 246 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-cyan-500{--tw-gradient-from:#06b6d4 var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 182 212 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-gray-600{--tw-gradient-from:#4b5563 var(--tw-gradient-from-position);--tw-gradient-to:rgb(75 85 99 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-green-500{--tw-gradient-from:#22c55e var(--tw-gradient-from-position);--tw-gradient-to:rgb(34 197 94 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-indigo-500{--tw-gradient-from:#6366f1 var(--tw-gradient-from-position);--tw-gradient-to:rgb(99 102 241 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-500{--tw-gradient-from:#a855f7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(168 85 247 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-red-500{--tw-gradient-from:#ef4444 var(--tw-gradient-from-position);--tw-gradient-to:rgb(239 68 68 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-yellow-500{--tw-gradient-from:#eab308 var(--tw-gradient-from-position);--tw-gradient-to:rgb(234 179 8 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.to-blue-500{--tw-gradient-to:#3b82f6 var(--tw-gradient-to-position)}.to-brand-blue{--tw-gradient-to:#1382b9 var(--tw-gradient-to-position)}.to-emerald-600{--tw-gradient-to:#059669 var(--tw-gradient-to-position)}.to-gray-700{--tw-gradient-to:#374151 var(--tw-gradient-to-position)}.to-indigo-600{--tw-gradient-to:#4f46e5 var(--tw-gradient-to-position)}.to-orange-500{--tw-gradient-to:#f97316 var(--tw-gradient-to-position)}.to-purple-600{--tw-gradient-to:#9333ea var(--tw-gradient-to-position)}.to-red-600{--tw-gradient-to:#dc2626 var(--tw-gradient-to-position)}.p-3{padding:0.75rem}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-6xl{font-size:3.75rem;line-height:1}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-brand-blue{--tw-text-opacity:1;color:rgb(19 130 185 / var(--tw-text-opacity, 1))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-brand-blue-dark:hover{--tw-bg-opacity:1;background-color:rgb(15 107 148 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}</style></head>
+<body class="bg-gray-100">
+
+    <!-- Seção de Serviços Melhorada -->
+    <section id="servicos" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Cabeçalho da Seção -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Nossos <span class="text-brand-blue">Serviços</span></h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Oferecemos uma gama completa de serviços automotivos com qualidade profissional e preços justos</p>
+            </div>
+
+            <!-- Carrossel Moderno -->
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack" style="transform: translateX(-133.333%);">
+                    <!-- Slide 1 - Lavagem -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-blue-500 to-brand-blue flex items-center justify-center">
+                                <div class="text-6xl text-white">🧽</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Lavagem Completa</h3>
+                                <p class="text-gray-600 mb-4">Lavagem tradicional, de motor, detalhada, com produtos e técnicas específicas para cada tipo de veículo e pintura.</p>
+                                <button onclick="showServiceDetails('lavagem')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 - Limpeza de Estofados -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center">
+                                <div class="text-6xl text-white">🪑</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Limpeza de Estofados</h3>
+                                <p class="text-gray-600 mb-4">Limpeza profunda de bancos, carpetes e forros com produtos específicos que removem manchas e odores.</p>
+                                <button onclick="showServiceDetails('estofados')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 - Mecânica Geral -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+                                <div class="text-6xl text-white">🔧</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Mecânica Geral</h3>
+                                <p class="text-gray-600 mb-4">Serviços completos de mecânica, desde manutenção preventiva até reparos complexos do motor e transmissão.</p>
+                                <button onclick="showServiceDetails('mecanica')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 - Elétrica Automotiva -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center">
+                                <div class="text-6xl text-white">⚡</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Elétrica Automotiva</h3>
+                                <p class="text-gray-600 mb-4">Diagnóstico e reparo de sistemas elétricos, instalação de acessórios e solução de problemas eletrônicos.</p>
+                                <button onclick="showServiceDetails('eletrica')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 - Troca de Óleo -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                                <div class="text-6xl text-white">🛢️</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Troca de Óleo</h3>
+                                <p class="text-gray-600 mb-4">Troca de óleo do motor e filtros com produtos de qualidade, garantindo a longevidade do seu veículo.</p>
+                                <button onclick="showServiceDetails('oleo')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 - Diagnóstico -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                                <div class="text-6xl text-white">🔍</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Diagnóstico</h3>
+                                <p class="text-gray-600 mb-4">Diagnóstico computadorizado completo para identificar problemas e garantir o melhor desempenho do veículo.</p>
+                                <button onclick="showServiceDetails('diagnostico')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 - Ar Condicionado -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
+                                <div class="text-6xl text-white">❄️</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Ar Condicionado</h3>
+                                <p class="text-gray-600 mb-4">Manutenção, reparo e recarga do sistema de ar condicionado para seu conforto em todas as estações.</p>
+                                <button onclick="showServiceDetails('ar-condicionado')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 8 - Pneus e Alinhamento -->
+                    <div class="carousel-slide">
+                        <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 h-full">
+                            <div class="h-48 bg-gradient-to-br from-gray-600 to-gray-700 flex items-center justify-center">
+                                <div class="text-6xl text-white">🛞</div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Pneus e Alinhamento</h3>
+                                <p class="text-gray-600 mb-4">Serviços de alinhamento, balanceamento e troca de pneus para garantir segurança e economia de combustível.</p>
+                                <button onclick="showServiceDetails('pneus')" class="bg-brand-blue hover:bg-brand-blue-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors w-full">
+                                    Saiba mais
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles do Carrossel -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-gray-800 p-3 rounded-full shadow-lg transition-all z-10">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+
+                <!-- Indicadores -->
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button onclick="goToSlide(0)" class="indicator w-3 h-3 rounded-full transition-all bg-gray-300"></button>
+                    <button onclick="goToSlide(1)" class="indicator w-3 h-3 rounded-full transition-all bg-gray-300"></button>
+                    <button onclick="goToSlide(2)" class="indicator w-3 h-3 rounded-full transition-all bg-gray-300"></button>
+                    <button onclick="goToSlide(3)" class="indicator w-3 h-3 rounded-full transition-all bg-gray-300"></button>
+                    <button onclick="goToSlide(4)" class="indicator w-3 h-3 rounded-full transition-all bg-brand-blue"></button>
+                    <button onclick="goToSlide(5)" class="indicator w-3 h-3 rounded-full bg-gray-300 transition-all"></button>
+                    <button onclick="goToSlide(6)" class="indicator w-3 h-3 rounded-full bg-gray-300 transition-all"></button>
+                    <button onclick="goToSlide(7)" class="indicator w-3 h-3 rounded-full bg-gray-300 transition-all"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 8;
+        let slidesPerView = getSlidesPerView();
+
+        function getSlidesPerView() {
+            if (window.innerWidth >= 1024) return 3;
+            if (window.innerWidth >= 768) return 2;
+            return 1;
+        }
+
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            const slideWidth = 100 / slidesPerView;
+            const translateX = -(currentSlide * slideWidth);
+            track.style.transform = `translateX(${translateX}%)`;
+            
+            // Atualizar indicadores
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                if (index === currentSlide) {
+                    indicator.classList.remove('bg-gray-300');
+                    indicator.classList.add('bg-brand-blue');
+                } else {
+                    indicator.classList.remove('bg-brand-blue');
+                    indicator.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        function nextSlide() {
+            const maxSlide = totalSlides - slidesPerView;
+            currentSlide = currentSlide >= maxSlide ? 0 : currentSlide + 1;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            const maxSlide = totalSlides - slidesPerView;
+            currentSlide = currentSlide <= 0 ? maxSlide : currentSlide - 1;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            const maxSlide = totalSlides - slidesPerView;
+            currentSlide = Math.min(index, maxSlide);
+            updateCarousel();
+        }
+
+        function showServiceDetails(service) {
+            const serviceInfo = {
+                'lavagem': 'Oferecemos lavagem completa, enceramento, lavagem de motor e detalhamento. Entre em contato para mais informações!',
+                'estofados': 'Limpeza profissional de bancos de couro e tecido, carpetes e forros. Removemos manchas e odores!',
+                'mecanica': 'Mecânica geral com profissionais experientes. Manutenção preventiva e corretiva!',
+                'eletrica': 'Especialistas em elétrica automotiva. Diagnóstico e reparo de todos os sistemas elétricos!',
+                'oleo': 'Troca de óleo com produtos de qualidade. Filtros originais e sintéticos disponíveis!',
+                'diagnostico': 'Diagnóstico computadorizado completo. Identificamos problemas rapidamente!',
+                'ar-condicionado': 'Manutenção completa do ar condicionado. Higienização e recarga de gás!',
+                'pneus': 'Alinhamento, balanceamento e venda de pneus das melhores marcas!'
+            };
+            
+            alert(serviceInfo[service] || 'Entre em contato para mais informações sobre este serviço!');
+        }
+
+        // Auto-play do carrossel
+        setInterval(nextSlide, 5000);
+
+        // Atualizar ao redimensionar a tela
+        window.addEventListener('resize', () => {
+            slidesPerView = getSlidesPerView();
+            const maxSlide = totalSlides - slidesPerView;
+            if (currentSlide > maxSlide) {
+                currentSlide = maxSlide;
+            }
+            updateCarousel();
+        });
+
+        // Inicializar
+        updateCarousel();
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9575f34cd446e122',t:'MTc1MTIwNTYyOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+
+</body></html>
